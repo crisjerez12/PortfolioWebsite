@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi"
+    />
+    <title>Personal Portfolio | Skill</title>
+    <link rel="icon" type="image/png" href="images/ariser-icon.png" />
+    <link rel="stylesheet" href="css/font-awesome-pro.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/scroll_button.css" />
+    <link rel="stylesheet" href="css/spacing.css" />
+    <link rel="stylesheet" href="css/plugin.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <script defer src="js/plugin.js"></script>
+    <script defer src="js/scroll_button.js"></script>
+    <script defer src="js/sticky_sidebar.js"></script>
+    <script defer src="js/animation.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body class="home_2">
+    <div class="preloader">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+      </svg>
+      <h5 class="preloader-text">Loading</h5>
+    </div>
+    <nav class="main_menu_2">
+      <span class="menu_2_icon">
+        <i class="fa-light fa-bars bar_icon-staggered bar_icon"></i>
+        <i class="fa-light fa-xmark close_icon"></i>
+      </span>
+
+      <a class="logo_2" href="index.html">
+        <img src="images/logo.png" class="w-100" />
+      </a>
+
+      <ul id="list-example" class="list-group">
+        <li>
+          <a
+            class="list-group-item list-group-item-action text_hover_animaiton"
+            href="about.html"
+          >
+            <span
+              ><img
+                src="svg/clipboard.svg"
+                alt="icon"
+                class="img-fluid w-100 svg" /></span
+            >About Me
+          </a>
+        </li>
+        <li>
+          <a
+            class="list-group-item list-group-item-action text_hover_animaiton"
+            href="service.html"
+          >
+            <span
+              ><img
+                src="svg/briefcase.svg"
+                alt="icon"
+                class="img-fluid w-100 svg"
+            /></span>
+            Service
+          </a>
+        </li>
+        <li>
+          <a
+            class="list-group-item list-group-item-action text_hover_animaiton"
+            href="skills.html"
+          >
+            <span
+              ><img src="svg/path.svg" alt="icon" class="img-fluid w-100 svg"
+            /></span>
+            Skills
+          </a>
+        </li>
+        <li>
+          <a
+            class="list-group-item list-group-item-action text_hover_animaiton"
+            href="portfolio.html"
+          >
+            <span
+              ><img
+                src="svg/messages-1.svg"
+                alt="icon"
+                class="img-fluid w-100 svg"
+            /></span>
+            Portfolio
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="list-group-item list-group-item-action text_hover_animaiton"
+            href="contact.html"
+          >
+            <span
+              ><img
+                src="svg/user-square.svg"
+                alt="icon"
+                class="img-fluid w-100 svg"
+            /></span>
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <section
+        id="skills"
+        class="tf__skills_2 pt_50 xs_pt_75 pb_120 xs_pb_80 mt_20 xs_mt_80"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 col-lg-9 m-auto">
+              <div class="tf__section_heading mb_30">
+                <h5 class="has-animation">MY Skills</h5>
+                <h2 class="has-animation">
+                  MERN Stack Maestro crafting dynamic web experiences
+                  seamlessly.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xxl-8 col-xl-10 m-auto">
+              <ul class="nav nav-pills mb_30" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Front-end
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    Back-end
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
+                    Database
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-disabled-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-disabled"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-disabled"
+                    aria-selected="false"
+                  >
+                    Extra
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>HTML5</h3>
+                        <p>
+                          I excel in crafting structurally sound and
+                          semantically meaningful web content. Leveraging the
+                          latest features and tags, I ensure seamless user
+                          experiences, responsiveness, and adherence to modern
+                          web standards in every project.
+                        </p>
+                        <div class="tf__team_skills_bar_single">
+                          <p>Mastery</p>
+                          <div id="bar1" class="barfiller">
+                            <div class="tipWrap">
+                              <span class="tip"></span>
+                            </div>
+                            <span class="fill" data-percentage="100"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>CSS3</h3>
+
+                        <p>
+                          Mastery in CSS3 empowers me to design visually
+                          stunning, responsive interfaces. My expertise includes
+                          flexbox, grid, and animations, ensuring a seamless
+                          blend of aesthetics and functionality for an enhanced
+                          user experience.
+                        </p>
+                        <div class="tf__team_skills_bar_single">
+                          <p>Mastery</p>
+                          <div id="bar2" class="barfiller">
+                            <div class="tipWrap">
+                              <span class="tip"></span>
+                            </div>
+                            <span class="fill" data-percentage="90"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>JAVASCRIPT</h3>
+
+                        <p>
+                          JavaScript virtuoso here, adept at creating dynamic
+                          and interactive web applications. Proficient in ES6+,
+                          I bring a blend of creativity and functionality,
+                          leveraging frameworks like React to build immersive
+                          digital experiences.
+                        </p>
+                        <div class="tf__team_skills_bar_single">
+                          <p>Mastery</p>
+                          <div id="bar3" class="barfiller">
+                            <div class="tipWrap">
+                              <span class="tip"></span>
+                            </div>
+                            <span class="fill" data-percentage="95"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>REACTJS</h3>
+
+                        <p>
+                          Building modular and scalable user interfaces. My
+                          expertise extends to crafting interactive components,
+                          managing state efficiently, and ensuring optimal
+                          performance, delivering seamless and engaging web
+                          experiences.
+                        </p>
+                        <div class="tf__team_skills_bar_single">
+                          <p>Mastery</p>
+                          <div id="bar4" class="barfiller">
+                            <div class="tipWrap">
+                              <span class="tip"></span>
+                            </div>
+                            <span class="fill" data-percentage="80"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                  tabindex="0"
+                >
+                  <div class="row education">
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>NODEJS</h3>
+                        <p>
+                          Node.js maestro at your service, proficient in
+                          leveraging its asynchronous capabilities to build
+                          scalable, server-side applications. My expertise spans
+                          API development, real-time features, and seamless
+                          integration within the MERN stack for a cohesive
+                          end-to-end development experience.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>PHP</h3>
+                        <p>
+                          PHP specialist, adept at server-side scripting for
+                          dynamic web applications. My skills encompass robust
+                          back-end development, database integration, and
+                          creating custom solutions that ensure functionality
+                          and performance. Let's bring your projects to life
+                          with the power of PHP.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>PYTHON</h3>
+                        <p>
+                          Python enthusiast, utilizing its versatility to
+                          develop scalable and efficient solutions. From web
+                          applications to data science, my proficiency spans
+                          diverse domains. With Django or Flask, I craft elegant
+                          and effective solutions that align with your project's
+                          unique needs.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>EXPRESSJS</h3>
+                        <p>
+                          Streamlining server-side development with its
+                          minimalist and flexible framework. I specialize in
+                          creating robust APIs, optimizing route handling, and
+                          ensuring seamless integration within the Node.js
+                          ecosystem. Elevate your server-side architecture with
+                          Express.js proficiency.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab"
+                  tabindex="0"
+                >
+                  <div class="row education">
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>POSTGRESQL</h3>
+
+                        <p>
+                          PostgreSQL aficionado specializing in crafting robust
+                          and scalable database solutions. From data modeling to
+                          complex queries, my expertise ensures optimal
+                          performance and reliability. Let's harness the power
+                          of PostgreSQL to enhance your data-driven
+                          applications.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>MYSQL</h3>
+
+                        <p>
+                          MySQL maestro here, proficient in designing and
+                          optimizing relational databases. My skills include
+                          data modeling, query optimization, and ensuring the
+                          seamless integration of MySQL within applications.
+                          Let's leverage the power of MySQL for robust and
+                          efficient data management in your projects.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>MONGODB</h3>
+
+                        <p>
+                          MongoDB maven at your service, specializing in NoSQL
+                          database solutions. Proficient in schema-less data
+                          modeling and flexible document storage, I leverage
+                          MongoDB to create scalable and high-performance
+                          applications. Let's harness the power of MongoDB for
+                          your data-driven projects.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>FIREBASE</h3>
+                        <p>
+                          Leveraging its real-time database and cloud services
+                          to build dynamic and scalable applications. From
+                          authentication to hosting, my expertise ensures
+                          seamless integration, enabling fast development and
+                          deployment of feature-rich, serverless solutions.
+                          Let's unlock the full potential of Firebase for your
+                          projects.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-disabled"
+                  role="tabpanel"
+                  aria-labelledby="pills-disabled-tab"
+                  tabindex="0"
+                >
+                  <div class="row education">
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>BOOTSTRAP</h3>
+                        <p>
+                          Skilled in utilizing its responsive framework to
+                          create visually appealing and mobile-friendly web
+                          interfaces. With proficiency in customizing themes and
+                          optimizing layouts, I ensure a polished and consistent
+                          user experience. Let's elevate your web design with
+                          the versatility of Bootstrap.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>TAILWIND CSS</h3>
+                        <p>
+                          Harnessing its utility-first approach to craft highly
+                          customizable and modern user interfaces. Proficient in
+                          building sleek designs, optimizing for responsiveness,
+                          and streamlining the styling process. Let's enhance
+                          your projects with the efficiency and flexibility of
+                          Tailwind CSS.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>MATERIAL UI</h3>
+                        <p>
+                          leveraging its React components to create visually
+                          stunning and consistent user interfaces. With a focus
+                          on design principles and seamless integration, I
+                          ensure a polished and cohesive user experience. Let's
+                          elevate your React projects with the elegance of
+                          Material-UI components.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>FRAMER MOTION</h3>
+                        <p>
+                          Infusing life into web interfaces with fluid
+                          animations and delightful motion design. From creating
+                          interactive components to enhancing user engagement, I
+                          specialize in leveraging Framer Motion to add that
+                          extra layer of dynamism and sophistication to your
+                          projects.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer_2_copyright_area mt_50 xs_mt_80">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="tf__footer_copyright">
+                <p>© Ariser 2023 | All Rights Reserved</p>
+                <ul>
+                  <li>
+                    <a href="#" class="text_hover_animaiton"
+                      >Terms & Condition</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text_hover_animaiton">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
