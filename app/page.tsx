@@ -14,8 +14,9 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Marquee from "@/components/component/LanguagesMarquee";
 import {
-  ArrowLeftIcon,
+  CircleAlert,
   MoonIcon,
+  MoveUp,
   NavigationIcon,
   SunIcon,
   XIcon,
@@ -26,6 +27,12 @@ export default function Home() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <div className={`flex flex-col min-h-[100dvh] ${isDarkMode ? "dark" : ""}`}>
+      <h1 className="w-screen bg-orange-400 text-center py-2 text-md flex justify-center">
+        <span className="flex mr-2 items-center">
+          <CircleAlert className="h-5" /> Notice:
+        </span>
+        This website is currently under construction
+      </h1>
       <header className="sticky top-0 z-10 w-full bg-background dark:bg-muted transition-colors duration-300">
         <div className="container flex items-center justify-between h-16 px-4 md:px-6">
           <Link href="#" className="text-lg font-bold" prefetch={false}>
@@ -44,7 +51,7 @@ export default function Home() {
               Home
             </Link>
             <Link
-              href="#"
+              href="#skills"
               className="text-sm font-medium hover:underline"
               prefetch={false}
             >
@@ -88,7 +95,7 @@ export default function Home() {
         </div>
       </header>
       {isNavOpen && (
-        <div className="fixed inset-0 z-20 bg-background/80 backdrop-blur-sm dark:bg-muted/80 flex justify-center items-center">
+        <div className="fixed inset-0 z-20 bg-background/80 backdrop-blur-sm dark:bg-muted/80 flex justify-center items-center ">
           <nav className="bg-background dark:bg-muted p-6 rounded-lg shadow-lg w-full max-w-md space-y-4">
             <div className="flex justify-between items-center">
               <Link
@@ -140,11 +147,9 @@ export default function Home() {
           </nav>
         </div>
       )}
-      <section
-        id="hero"
-        className="w-full py-12 md:py-24 lg:py-32 animate__animated animate__bounceIn"
-      >
-        <div className="container grid gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
+      {/* <div className="absolute z-0 inset-0 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div> */}
+      <section id="hero" className="w-full py-12 md:py-24 lg:py-32 z-1">
+        <div className="container grid gap-6 items-center px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
           <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
               Cris Jerez
@@ -161,7 +166,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-start space-y-4 animate__animated animate__slideInRight">
             <Image
-              src="/placeholder.svg"
+              src="/profilepic.jpg"
               width="400"
               height="400"
               alt="John Doe"
@@ -363,7 +368,7 @@ export default function Home() {
         className="fixed bottom-4 right-4 bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center shadow-md transition-transform hover:scale-110"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
-        <ArrowLeftIcon />
+        <MoveUp />
       </button>
     </div>
   );

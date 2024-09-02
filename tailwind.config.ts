@@ -9,22 +9,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      extend: {
-        animation: {
-          marquee: "marquee 5s linear infinite",
-          marquee2: "marquee2 5s linear infinite",
-        },
-        keyframes: {
-          marquee: {
-            "0%": { transform: "translateX(0%)" },
-            "100%": { transform: "translateX(-100%)" },
-          },
-          marquee2: {
-            "0%": { transform: "translateX(100%)" },
-            "100%": { transform: "translateX(0%)" },
-          },
-        },
-      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -75,6 +59,20 @@ const config: Config = {
           "3": "hsl(var(--chart-3))",
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
+        },
+      },
+      animation: {
+        marquee: "marquee 5s linear infinite",
+        marquee2: "marquee2 5s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
         },
       },
     },
